@@ -7,7 +7,7 @@ sudo apt-get install liblz4-tool
 ## Downloads and Install Environment
 mkdir yocto  
 cd yocto  
-git clone git://git.yoctoproject.org/poky.gitcd poky  
+git clone git://git.yoctoproject.org/poky.git
 cd poky  
 git clone git://git.yoctoproject.org/meta-raspberrypi  
 . oe-init-build-env build  
