@@ -7,13 +7,14 @@ sudo apt-get install lzop
 sudo apt-get install liblz4-tool
 ```
 ## Downloads and Install Environment
+```
 mkdir yocto  
 cd yocto  
 git clone git://git.yoctoproject.org/poky.git  
 cd poky  
 git clone git://git.yoctoproject.org/meta-raspberrypi  
 . oe-init-build-env build  
-
+```
 Poky裡面有一些Embedded system的基本Layer，可以幫助我們build，並下載Raspberrypi Layer，接著設定Environment，build也可以替換成你喜歡的目錄名稱。
 
 在build/conf下面修改local.conf  
