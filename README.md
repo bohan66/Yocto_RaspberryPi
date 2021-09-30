@@ -1,9 +1,11 @@
 # Yocto_RaspberryPi
 我們可以利用Yocto build一個簡單的image在RaspberryPi上使用，省去傳統boot、kernel、roofs各種複雜的操作。
 ## Dependencies
+```
 sudo apt-get install texinfo  
 sudo apt-get install lzop  
-sudo apt-get install liblz4-tool  
+sudo apt-get install liblz4-tool
+```
 ## Downloads and Install Environment
 mkdir yocto  
 cd yocto  
@@ -39,7 +41,7 @@ build成功後image檔會在/YOUR/PATH/poky/build/tmp/deploy/images/raspberrypi4
 `rpi-basic-image-raspberrypi4.rpi-sdimg`
 
 ## Burn sd card
-請利用balneaEtcher燒入至sd卡中，若使用Raspberry Pi Imager燒入請將附檔名修改為img  
+請利用balenaEtcher燒入至sd卡中，若使用Raspberry Pi Imager燒入請將附檔名修改為img  
 
 燒入後，將sd卡中的cmdlie.txt新增下面兩句  
 console=serial0,115200 console=tty1  
@@ -51,7 +53,7 @@ gpu_mem=128
 enable_uart=1   //後面會利用uart連接Raspberrypi，所以開啟  
 dtoverlay=w1-gpio   //如已有此dtoverlay設定，可以不用新增  
 
-最後使用USB轉UART轉接頭連接Raspberrypi和電腦，並使用tera term或putty與Raspberrypi連線，buad rate需設為115200，即可在console下面看到build完的linux
+最後使用USB轉UART轉接頭連接Raspberrypi和電腦，並使用tera term或putty與Raspberrypi連線，baud rate需設為115200，即可在console下面看到build完的linux
 
 ## Reference
 https://www.cnx-software.com/2015/02/27/yocto-project-raspberry-pi-2-board-minimal-image/  
