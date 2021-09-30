@@ -37,7 +37,7 @@ BBLAYERS ?= " \
 修改好之後回到build目錄下利用bitbake build image
 bitbake rpi-basic-image
 
-build成功後image檔會在/YOUR/PATH/poky/build/tmp/deploy/images/raspberrypi4下面
+build成功後image檔會在/YOUR/PATH/yocto/poky/build/tmp/deploy/images/raspberrypi4下面
 
 `rpi-basic-image-raspberrypi4.rpi-sdimg`
 
